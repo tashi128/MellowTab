@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f7f2">
+  <meta name="description" content="A Chrome extension exploring a more accessible web through AI text simplification, image descriptions, and experimental flashing-video detection.">
+  <meta property="og:title" content="MellowTab — A little help. A more accessible web.">
+  <meta property="og:description" content="Explore the design and engineering of a Chrome extension for reading, image descriptions, and sensory awareness.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mellowtab.zartashia.com/">
+  <link rel="canonical" href="https://mellowtab.zartashia.com/">
+  <title>MellowTab — A more accessible web</title>
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="site.css">
+  <script src="site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="brand" href="#" aria-label="MellowTab home"><span class="brand-symbol" aria-hidden="true">⋆˚꩜｡</span><span>Mellow<span class="brand-light">Tab</span></span></a>
+    <nav aria-label="Main navigation"><a href="#features">Features</a><a href="#story">The story</a><a href="#build">The build <span aria-hidden="true">↗</span></a></nav>
+    <span class="project-badge"><span></span> A Chrome extension project</span>
+  </header>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="small-star" aria-hidden="true">⋆˚꩜｡</span> BUILT FOR A MORE INCLUSIVE WEB</p>
+        <h1 id="hero-title">A little help.<br>A more<br><em>accessible web.</em></h1>
+        <p class="hero-description">Less friction between people and information. A Chrome extension that simplifies text, describes images, and helps you navigate sensory overload.</p>
+        <div class="hero-actions"><a class="button primary" href="#demo">Explore the demo <span aria-hidden="true">↗</span></a><a class="text-link" href="#story">Behind the project <span aria-hidden="true">→</span></a></div>
+        <div class="hero-meta"><span class="chrome-icon" aria-hidden="true">◉</span> Built for Chrome <span class="separator">/</span> Powered by Gemini <span class="separator">/</span> Prototype v1.0</div>
+      </div>
+      <div class="hero-visual" aria-label="Illustrated preview of the extension’s reader">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><span class="visual-star" aria-hidden="true">⋆˚꩜｡</span>
+        <div class="browser-mock">
+          <div class="browser-top"><span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="address">⌕ &nbsp; a little clarity, wherever you browse</span><span aria-hidden="true">⋮</span></div>
+          <div class="mock-article"><div class="article-kicker">THE EVERYDAY JOURNAL <span>READING · 4 MIN</span></div><h2>Big ideas. A little clearer.</h2><div class="fake-lines" aria-hidden="true"><i></i><i></i><i></i></div>
+            <div class="reader-preview"><div class="reader-label"><span>✧ &nbsp; Your MellowTab reader</span><span class="mini-pill">Simplified</span></div><p>The web has a lot to say.<br>Let’s make it easier to read.</p><div class="reader-tags"><span>OpenDyslexic</span><span>♪ &nbsp; Read aloud</span></div></div>
+            <div class="fake-lines bottom-lines" aria-hidden="true"><i></i><i></i></div>
+          </div>
+        </div>
+        <div class="floating-note"><span class="check-icon" aria-hidden="true">✓</span><div>A little less overwhelming.<small>A little more you.</small></div></div>
+        <p class="visual-caption">SAME WEB. MORE WAYS TO EXPERIENCE IT.</p>
+      </div>
+    </section>
+    <div class="principles wrap"><span>One extension. Three ways to help.</span><span><b aria-hidden="true">Aa</b> Read with clarity</span><span><b aria-hidden="true">▧</b> Discover visual context</span><span><b aria-hidden="true">◇</b> Browse with awareness</span></div>
+
+    <section id="features" class="section wrap">
+      <div class="section-heading"><div><p class="eyebrow">01 / THE FEATURES</p><h2>Small tools.<br>Meaningful differences.</h2></div><p>Accessibility isn’t one-size-fits-all.<br>These tools explore different ways to make<br class="desktop-break"> the same content more approachable.</p></div>
+      <div class="feature-grid">
+        <article class="feature-card"><div class="feature-top"><span class="feature-icon">Aa</span><span class="feature-number">01</span></div><h3>Read at your rhythm.</h3><p>Turn dense paragraphs into simpler language. Read in OpenDyslexic, or listen with built-in text-to-speech.</p><div class="feature-foot"><span>TEXT SIMPLIFICATION</span><kbd>Alt + S</kbd></div></article>
+        <article class="feature-card"><div class="feature-top"><span class="feature-icon" aria-hidden="true">▧</span><span class="feature-number">02</span></div><h3>Give images a voice.</h3><p>Find images missing alt text and generate AI descriptions, adding context that can be read by assistive technology.</p><div class="feature-foot"><span>AI IMAGE DESCRIPTIONS</span><span aria-hidden="true">↗</span></div></article>
+        <article class="feature-card"><div class="feature-top"><span class="feature-icon" aria-hidden="true">◇</span><span class="feature-number">03</span></div><h3>A moment to pause.</h3><p>Sensory Shield analyzes video frames on your device, pausing playback when it detects possible flashing.</p><div class="feature-foot"><span>SENSORY SHIELD</span><span class="experimental">Experimental</span></div></article>
+      </div>
+    </section>
+
+    <section id="demo" class="demo-section">
+      <div class="wrap"><div class="section-heading"><div><p class="eyebrow">02 / A CLOSER LOOK</p><h2>A little clarity.<br>Try it for yourself.</h2></div><p>An interactive preview of the experience.<br>Illustrative examples, no installation needed.</p></div>
+        <div class="demo-tabs" role="tablist" aria-label="Feature previews"><button id="tab-text" role="tab" aria-selected="true" aria-controls="panel-text" tabindex="0">Aa <span>Simplify text</span></button><button id="tab-images" role="tab" aria-selected="false" aria-controls="panel-images" tabindex="-1">▧ <span>Describe images</span></button><button id="tab-shield" role="tab" aria-selected="false" aria-controls="panel-shield" tabindex="-1">◇ <span>Sensory Shield</span></button></div>
+        <div id="panel-text" class="demo-panel" role="tabpanel" aria-labelledby="tab-text">
+          <div class="demo-source"><span class="label">THE ORIGINAL</span><h3>Understanding neuroplasticity</h3><p>Neuroplasticity refers to the brain’s capacity to reorganize its neural pathways in response to novel experiences, environmental stimuli, and acquired knowledge throughout an individual’s lifespan.</p><span class="source-note">A sample of complex reading material</span></div>
+          <div class="demo-result"><div class="result-heading"><span class="label">✧ &nbsp; WITH MELLOWTAB</span><span class="mini-pill">Reading mode</span></div><div id="simplified-content" aria-live="polite"><h3>Big words, meet a little clarity.</h3><p>See how this paragraph could look with simpler language and a different reading font.</p></div><button id="simplify-button" class="button primary">Simplify this text <span aria-hidden="true">✧</span></button><button id="reset-button" class="reset-button" hidden>Reset example ↺</button></div>
+        </div>
+        <div id="panel-images" class="demo-panel" role="tabpanel" aria-labelledby="tab-images" hidden><div class="demo-source image-source"><img src="assets/landscape.svg" alt="Illustration of a winding trail between green hills, with a rising sun." width="520" height="260"><span class="source-note">Example image · illustration</span></div><div class="demo-result"><div class="result-heading"><span class="label">✧ &nbsp; VISUAL CONTEXT</span><span class="mini-pill">Example description</span></div><h3>More than a picture.</h3><p>“A winding trail runs between green hills beneath a pale sky, with the sun rising behind the distant mountains.”</p><p class="demo-detail">The extension sends supported images without alt text to Gemini, then adds the returned description to the page.</p></div></div>
+        <div id="panel-shield" class="demo-panel" role="tabpanel" aria-labelledby="tab-shield" hidden><div class="demo-source shield-source"><span class="shield-symbol" aria-hidden="true">◇</span><h3 id="shield-preview-heading">Video preview</h3><p id="shield-preview-copy">This is a static illustration. No flashing content is shown.</p><span class="video-timeline" aria-hidden="true"><i></i></span></div><div class="demo-result"><div class="result-heading"><span class="label">◇ &nbsp; SENSORY SHIELD</span><span class="mini-pill">On-device analysis</span></div><h3>A pause. Then a choice.</h3><p>When possible flashing is detected, the extension pauses the video and presents a warning.</p><button id="shield-button" class="button primary" aria-pressed="false">Preview a warning <span aria-hidden="true">→</span></button><p class="demo-detail">Experimental detection with browser and video-access limitations. It cannot guarantee that every flash will be detected.</p></div></div>
+        <p class="demo-disclaimer">This website uses prepared examples to show the concept. Live AI features run in the extension and require a Gemini API key.</p>
+      </div>
+    </section>
+
+    <section id="story" class="story-section section wrap"><div><p class="eyebrow">03 / THE THINKING BEHIND IT</p><h2>The web is for everyone.<br><em>The experience isn’t.</em></h2></div><div class="story-copy"><p class="story-lead">A dense article. An image with no description. A video that suddenly becomes overwhelming.</p><p>Everyday browsing can come with invisible barriers. This project explores a simple question: what if a little support could live right in the browser, alongside the content you already use?</p><p>MellowTab brings reading support, visual context, and sensory awareness into one extension. It’s an exploration of thoughtful interfaces and practical AI, with room to learn from the people it aims to support.</p><div class="story-signoff"><span aria-hidden="true">↳</span> Built around people. Developed with curiosity.</div></div></section>
+
+    <section id="build" class="build-section wrap"><div class="section-heading"><div><p class="eyebrow">04 / UNDER THE HOOD</p><h2>Thoughtful on the surface.<br>Practical underneath.</h2></div><p>A lightweight browser extension connecting<br>native web capabilities with generative AI.</p></div><div class="build-grid"><div class="stack"><span class="label">THE TOOLKIT</span><div class="stack-chips"><span>JavaScript</span><span>Chrome Manifest V3</span><span>Gemini API</span><span>HTML5 Canvas</span><span>Web Speech API</span><span>OpenDyslexic</span></div></div><div class="engineering"><article><span>01</span><div><h3>Support where the content lives</h3><p>Content scripts adapt the current page. A background service worker handles requests to Gemini for text and image descriptions.</p></div></article><article><span>02</span><div><h3>Local processing where it matters</h3><p>Sensory Shield compares video frames on the device. Text simplification and image descriptions use the external Gemini API.</p></div></article><article><span>03</span><div><h3>A prototype with a next chapter</h3><p>Next steps include testing with users, evaluating AI descriptions, and improving coverage across different websites and video sources.</p></div></article></div></div></section>
+    <section class="closing wrap"><span class="closing-star" aria-hidden="true">⋆˚꩜｡</span><p class="eyebrow">AN EXPLORATION IN ACCESSIBLE TECHNOLOGY</p><h2>A more thoughtful web<br>starts with a little help.</h2><a class="button primary" href="#demo">Take another look <span aria-hidden="true">↑</span></a></section>
+  </main>
+  <footer class="wrap"><a class="brand" href="#"><span class="brand-symbol" aria-hidden="true">⋆˚꩜｡</span><span>Mellow<span class="brand-light">Tab</span></span></a><p>MellowTab · Project showcase</p><a href="#main">Back to top ↑</a></footer>
+</body>
+</html>

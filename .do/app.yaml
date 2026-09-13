@@ -1,0 +1,19 @@
+name: mellowtab
+static_sites:
+  - name: mellowtab
+    github:
+      repo: tashi128/MellowTab
+      branch: main
+      deploy_on_push: true
+    source_dir: /
+    environment_slug: html
+    build_command: mkdir -p _static && cp index.html site.css site.js _static/ && cp -R assets _static/assets
+    output_dir: _static
+    index_document: index.html
+ingress:
+  rules:
+    - component:
+        name: mellowtab
+      match:
+        path:
+          prefix: /
